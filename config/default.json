@@ -1,0 +1,22 @@
+{
+    "global": {
+        "server": "belgoserver",
+        "redirect_to_tls": true,
+        "tls_port": 8081,
+        "plaintext_port": 8080
+    },
+    "hosts": {
+        "belgo.org": {
+            "documentRoot": "/var/www/belgo.org",
+            "cert": "certs/belgo.org/cert.pem",
+            "chain": "certs/belgo.org/chain.pem",
+            "privkey": "certs/belgo.org/privkey.pem"
+        },
+        "cshepherd.fr": {
+            "documentRoot": "/var/www/cshepherd.fr",
+            "cert": "certs/cshepherd.fr/cert.pem",
+            "chain": "certs/cshepherd.fr/chain.pem",
+            "privkey": "certs/cshepherd.fr/privkey.pem"
+        }
+    }
+}
